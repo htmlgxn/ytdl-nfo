@@ -8,7 +8,11 @@ Ideal for Jellyfin / Emby users.
 - Auto-saves in a folder named after the video by default.
 
 ## Installation
-Make sure pip is up to date.
+Make sure pip is up to date:
+```bash
+pip install --upgrade pip
+```
+Install:
 ```bash
 git clone https://github.com/htmlgxn/ytdl-nfo.git
 cd ytdl-nfo
@@ -16,11 +20,11 @@ pip install .
 ```
 
 ## Usage
-To download in working directory (creates a subfolder)
+To download in working directory (creates a subfolder):
 ```bash
 ytdl-nfo <youtube-url>
 ```
-To change from default directory
+To change from default directory:
 ```bash
 ytdl-nfo <youtube-url> --output_directory /path/to/directory
 ```
