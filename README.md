@@ -13,9 +13,14 @@ Make sure pip is up to date.
 git clone https://github.com/htmlgxn/ytdl-nfo.git
 cd ytdl-nfo
 pip install .
+```
 
 ## Usage
 To download in working directory (creates a subfolder)
 ```bash
 ytdl-nfo <youtube-url>
-
+```
+To change from default directory
+```bash
+ytdl-nfo <youtube-url> --output_directory /path/to/directory
+```
