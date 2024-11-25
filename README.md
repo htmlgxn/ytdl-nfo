@@ -5,7 +5,8 @@ Ideal for Jellyfin / Emby users.
 
 ## Features
 - Downloads videos with subtitles, thumbnails, and `.nfo` metadata.
-- Auto-saves in a folder named after the video by default.
+- Auto-saves in a folder named after the video in working directory by default.
+- Ability to specify alternate directory with `--output_directory`
 
 ## Installation
 Make sure pip is up to date:
@@ -24,7 +25,7 @@ To download in working directory (creates a subfolder):
 ```bash
 ytdl-nfo <youtube-url>
 ```
-To change from default directory:
+To specify alternate directory:
 ```bash
 ytdl-nfo <youtube-url> --output_directory /path/to/directory
 ```
