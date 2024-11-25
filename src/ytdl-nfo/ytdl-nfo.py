@@ -116,7 +116,7 @@ def download_video_and_create_nfo(video_url, output_directory=None):
     else:
         print(f"Downloaded video file not found for {video_url}.")
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description='Download video and create .nfo file.')
     parser.add_argument('video_url', help='URL of the video to download')
     parser.add_argument('--output_directory', help='Directory to save the video and .nfo file (optional)')
