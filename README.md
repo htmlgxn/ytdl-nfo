@@ -28,3 +28,18 @@ To change from default directory:
 ```bash
 ytdl-nfo <youtube-url> --output_directory /path/to/directory
 ```
+
+## Optional Settings
+With heavy usage, YouTube may block your requests with this something along the lines of this error:
+```bash
+ERROR: [youtube] <video_id>: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+```
+To fix this, use [Get cookies.txt](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) or something similar. Export as a txt file (cookies.txt) to the parent ytdl_nfo folder, and uncomment this in the src/ytdl_nfo/ytdl_nfo.py file:
+```bash
+#'cookiefile': '../../cookies.txt',
+```
+
+Another optional setting is to set a rate limit if YouTube is giving you a really hard time. Uncomment / edit this line (default is 1 MB / sec):
+```bash
+#'ratelimit': 1000000,
+```
