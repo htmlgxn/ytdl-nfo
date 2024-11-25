@@ -1,7 +1,7 @@
 # ytdl-nfo
 
-A tool to download YouTube videos - with thumbnails and generate `.nfo` file for media server.
-Ideal for Jellyfin / Emby users.
+A tool to download YouTube videos with thumbnails and generate a metadata `.nfo` file for media servers.
+Ideal for Jellyfin / Emby users + archivists.
 
 ## Features
 - Downloads videos with subtitles, thumbnails, and `.nfo` metadata.
