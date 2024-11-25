@@ -39,7 +39,7 @@ To fix this, use [Get cookies.txt](https://chromewebstore.google.com/detail/get-
 #'cookiefile': '../../cookies.txt',
 ```
 
-Another optional setting is to set a rate limit if YouTube is giving you a really hard time. Uncomment / edit this line (default is 1 MB / sec):
+Another optional setting is to set a rate limit if YouTube is giving you a really hard time. Uncomment / edit this line in the src/ytdl_nfo/ytdl_nfo.py file (default is 1 MB / sec):
 ```bash
 #'ratelimit': 1000000,
 ```
