@@ -27,7 +27,7 @@ ytdl-nfo <youtube-url>
 ```
 To specify alternate directory:
 ```bash
-ytdl-nfo <youtube-url> --output_directory /path/to/directory
+ytdl-nfo <youtube-url> -d, --dir /path/to/directory
 ```
 
 ## Optional Settings

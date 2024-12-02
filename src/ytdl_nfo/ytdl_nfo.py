@@ -56,6 +56,7 @@ def download_video(video_url, output_template, output_directory, filename):
 def create_nfo_file(metadata, nfo_path):
     title = metadata.get("title", "Unknown Title")
     channel = metadata.get("uploader", "Unknown Channel")
+    video_id = metadata.get("id", "Unknown Video ID")
     upload_date = metadata.get("upload_date", "")
     formatted_date = (
         f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:]}"
@@ -70,6 +71,7 @@ def create_nfo_file(metadata, nfo_path):
     description = metadata.get("description", "Unknown Description")
     nfo_content = f"""<episodedetails>
   <title>{title}</title>
+  <id>{video_id}</id>
   <studio>{channel}</studio>
   <releasedate>{formatted_date}</releasedate>
   <year>{upload_year}</year>
@@ -119,7 +121,7 @@ def download_video_and_create_nfo(video_url, output_directory=None):
 def main():
     parser = argparse.ArgumentParser(description='Download video and create .nfo file.')
     parser.add_argument('video_url', help='URL of the video to download')
-    parser.add_argument('--output_directory', help='Directory to save the video and .nfo file (optional)')
+    parser.add_argument('-d, --dir', help='Directory to save the video and .nfo file (optional)')
     args = parser.parse_args()
 
-    download_video_and_create_nfo(args.video_url, args.output_directory)
+    download_video_and_create_nfo(args.video_url, args.dir)
