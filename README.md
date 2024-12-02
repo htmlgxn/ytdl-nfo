@@ -17,7 +17,7 @@ Install:
 ```bash
 git clone https://github.com/htmlgxn/ytdl-nfo.git
 cd ytdl-nfo
-pip install .
+pip install --user .
 ```
 
 ## Usage
