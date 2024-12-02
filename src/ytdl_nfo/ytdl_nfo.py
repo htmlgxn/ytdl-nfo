@@ -121,7 +121,8 @@ def download_video_and_create_nfo(video_url, output_directory=None):
 def main():
     parser = argparse.ArgumentParser(description='Download video and create .nfo file.')
     parser.add_argument('video_url', help='URL of the video to download')
-    parser.add_argument('-d, --dir', help='Directory to save the video and .nfo file (optional)')
+    parser.add_argument('-d', '--dir', nargs='?', help='Change directory to save the video and .nfo file')
+
     args = parser.parse_args()
 
     download_video_and_create_nfo(args.video_url, args.dir)
